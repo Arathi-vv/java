@@ -24,8 +24,8 @@ class productDemo{
        }}
   public static void main(String args[]){
     product obj1=new product(1,"p1",10000);
-    product obj2=new product(1,"p2",50000);
-    product obj3=new product(1,"p3",2000);
+    product obj2=new product(2,"p2",50000);
+    product obj3=new product(3,"p3",2000);
     System.out.println("\nproduct_code\t Product_name\tProduct_price");
     obj1.display();
     obj2.display();
