@@ -10,9 +10,7 @@ class product{
   void display(){
    System.out.println(pcode+"\t\t"+pname+"\t\t"+price);
    }
-   }
-class productDemo{
- static void lowest(product p1,product p2,product p3){
+ void lowest(product p1,product p2,product p3){
   if(p1.price<=p2.price&&p1.price<=p3.price){
        System.out.println("product 1 price is lowest");
        }
@@ -22,6 +20,8 @@ class productDemo{
   else{
        System.out.println("product 3 price is lowest");
        }}
+   }
+class productDemo{
   public static void main(String args[]){
     product obj1=new product(1,"p1",10000);
     product obj2=new product(2,"p2",50000);
@@ -30,5 +30,5 @@ class productDemo{
     obj1.display();
     obj2.display();
     obj3.display();
-    lowest(obj1,obj2,obj3);
+    obj1.lowest(obj1,obj2,obj3);
     }}
